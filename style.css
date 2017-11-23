@@ -1,4 +1,4 @@
-/* 
+/*
 Theme Name:		 WP Bootstrap Starter Child
 Theme URI:		 http://www.websitebundles.com/
 Description:	 Theme by Site <a href=\"http://childthemegenerator.com/\">http://childthemegenerator.com/</a>
@@ -7,7 +7,7 @@ Author URI:		 http://childthemegenerator.com/
 Template:		 wp-bootstrap-starter
 Version:		 1.0.0
 Text Domain:	 WP-Bootstrap-Starter-child
--------------------------------------------------------------- */ 
+-------------------------------------------------------------- */
 
 /* =Theme customization starts here
 ------------------------------------------------------- */
@@ -192,6 +192,17 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
+}
+.carousel-indicators .active {
+  background-color: #4a4a4a;
+}
+.carousel-indicators li {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(74, 74, 74, 0.4);
+  margin-right: 5px;
+  margin-left: 5px;
 }
 .mt10 {
   margin-top: 10px !important;
