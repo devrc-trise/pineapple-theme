@@ -13,7 +13,7 @@
             </a>
           </div>
           <div class="site-info">
-            XXPineapple Hospitality Ltd.<br/>
+            Pineapple Hospitality Ltd.<br/>
             Company Number 10557444.<br/>
             5C Amhurst Road, London E8 1LL.<br/>
             <span class="text-underline"><a class="text-white" href="tel:+442070962058">+44 207 096 2058</a></span><br/>
