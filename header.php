@@ -12,16 +12,16 @@
     <header>
       <nav class="navbar navbar-dark bg-transparent">
         <div class="container">
-          <img class="logo" src="http://localhost/wp-content/uploads/2017/11/pineapple.png">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img class="logo" src="/wp-content/uploads/2017/11/pineapple-logo.png">
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button> -->
         </div>
       </nav>
-      <div class="collapse" id="navbarToggleExternalContent">
+      <!-- <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
           <h4 class="text-white">Collapsed content</h4>
           <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
-      </div>
+      </div> -->
     </header>
