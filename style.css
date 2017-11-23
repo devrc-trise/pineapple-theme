@@ -1,0 +1,272 @@
+/* 
+Theme Name:		 WP Bootstrap Starter Child
+Theme URI:		 http://www.websitebundles.com/
+Description:	 Theme by Site <a href=\"http://childthemegenerator.com/\">http://childthemegenerator.com/</a>
+Author:			 WebsiteBundles
+Author URI:		 http://childthemegenerator.com/
+Template:		 wp-bootstrap-starter
+Version:		 1.0.0
+Text Domain:	 WP-Bootstrap-Starter-child
+-------------------------------------------------------------- */ 
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+/* FONTS */
+@font-face {
+  font-family: BrownPro Regular;
+  src: url("fonts/BrownPro-Regular.otf") format("opentype")
+}
+@font-face {
+  font-family: HarmoniaSansProCyr Black;
+  src: url("fonts/HarmoniaSansProCyr-Black.otf") format("opentype")
+}
+@font-face {
+  font-family: HarmoniaSansProCyr Bold;
+  src: url("fonts/HarmoniaSansProCyr-Bold.otf") format("opentype")
+}
+@font-face {
+  font-family: HarmoniaSansProCyr SemiBdIt;
+  src: url("fonts/HarmoniaSansProCyr-SemiBdIt.otf") format("opentype")
+}
+
+body {
+  font-family: BrownPro Regular;
+  color: #4a4a4a;
+}
+a, a:hover {
+  text-decoration: none;
+}
+button:focus {
+  outline: none;
+}
+h1 {
+  font-size: 75px;
+  line-height: 80px;
+  font-family: HarmoniaSansProCyr Black;
+}
+footer {
+  background-color: #606060;
+  padding: 68px 0;
+}
+footer .site-info {
+  color: #fff;
+  font-size: 0.875em;
+  font-weight: bold;
+  line-height: 24px;
+}
+footer .social-links img {
+  height: 31px;
+  margin: 0 10px 15px;
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.bg-orange {
+  background-color: #F3B237;
+}
+.bg-gray {
+  background-color: #F7F7F7;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.text-white, .text-white:hover {
+  color: #fff;
+}
+.font-harmonia-black {
+  font-family: HarmoniaSansProCyr Black;
+}
+.font-harmonia-bold {
+  font-family: HarmoniaSansProCyr Bold;
+}
+.font-harmonia-semi {
+  font-family: HarmoniaSansProCyr SemiBdIt;
+}
+.text-orange, .text-orange:hover {
+  color: #F3B237;
+}
+.line-white {
+  border-top: 8px solid #fff;
+}
+.line-orange {
+  border-top: 8px solid #F3B237;
+  max-width: 340px;
+}
+.link-lg {
+  font-size: 1.875em;
+  font-family: HarmoniaSansProCyr Black;
+}
+.link-lg.text-white {
+  border-bottom: 2px solid #fff;
+}
+.link-lg.text-orange {
+  border-bottom: 2px solid #F3B237;
+}
+.navbar {
+  padding-top: 56px;
+}
+.navbar img.logo {
+  height: 104px;
+}
+.lead-md {
+  font-size: 1.625em;
+}
+.lead-lg {
+  font-size: 1.875em;
+}
+h1.heading-lg {
+  font-size: 5.625em;
+  line-height: 1em;
+}
+.pineapple-form.wpforms-container-full {
+  margin-top: 50px;
+  margin-bottom: 85px;
+}
+.pineapple-form.wpforms-container-full .wpforms-form input[type=text],
+.pineapple-form.wpforms-container-full .wpforms-form input[type=email],
+.pineapple-form.wpforms-container-full .wpforms-form input[type=tel],
+.pineapple-form.wpforms-container-full .wpforms-form textarea {
+  height: 54px;
+  font-size: 1.375em;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #F0F0F0;
+  border-color: #F0F0F0;
+}
+.pineapple-form.wpforms-container-full .wpforms-form textarea {
+  height: 144px;
+  padding-top: 15px;
+}
+.pineapple-form.wpforms-container-full .wpforms-form .wpforms-field {
+  padding: 13px 0;
+}
+.pineapple-form.wpforms-container-full .wpforms-form button[type=submit].btn-primary.btn-lg {
+  background-color: #F3B237;
+  color: #fff;
+  font-size: 1.375em;
+  padding: 12px 75px;
+  font-weight: bold;
+  border: 0;
+}
+.pineapple-form.wpforms-container-full .wpforms-form .wpforms-submit-container {
+  margin-top: 5px;
+}
+#wpforms-confirmation-6.wpforms-confirmation-container-full {
+  font-size: 1.625em;
+  padding: 150px 0;
+  background-color: transparent;
+  border: 0;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #868e96 !important;
+}
+input:-moz-placeholder, textarea:-moz-placeholder { /* Firefox 18- */
+  color: #868e96 !important;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: #868e96 !important;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #868e96 !important;
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 40%, 60%, 80%, 100% {-webkit-transform: translateY(0);}
+  50% {-webkit-transform: translateY(-15px);}
+}
+@keyframes bounce {
+  0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
+  50% {transform: translateY(-15px);}
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+.mt10 {
+  margin-top: 10px !important;
+}
+.mb0 {
+  margin-bottom: 0 !important;
+}
+.mb20 {
+  margin-bottom: 20px !important;
+}
+.mb1em {
+  margin-bottom: 1em !important;
+}
+.pt20 {
+  padding-top: 20px !important;
+}
+.pt65 {
+  padding-top: 65px !important;
+}
+
+/* HOME */
+.home header {
+  position: absolute;
+  width: 100%;
+}
+.cover-screen-wrapper {
+  height: 100vh;
+}
+.cover-screen {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://c.stocksy.com/a/RcN300/z0/805779.jpg');
+  background-size: cover;
+  background-position: top center;
+}
+.welcome-message {
+  font-size: 55px;
+  color: #fff;
+  padding: 15px 50px 2px;
+  background-color: #F3B237;
+  line-height: 66px;
+  display: inline-block;
+  margin-top: 40vh;
+}
+.our-work-list p {
+  line-height: 1.4em;
+}
+.our-work-link, .our-work-link:hover {
+  font-size: 5em;
+  position: absolute;
+  bottom: 20px;
+}
+#our-work-section .container {
+  padding: 280px 0;
+}
+#testimonials-section {
+  padding: 150px 0 60px;
+}
+#testimonials-section .carousel-item {
+  min-height: 300px;
+}
+#testimonials-section img.left-quote {
+  width: 75px;
+  max-width: 75px;
+}
+#know-us-section {
+  padding: 180px 0 160px;
+}
+#clients-sections {
+  padding: 100px 0;
+}
+#clients-sections .img-wrapper {
+  line-height: 121px;
+  margin-bottom: 100px;
+}
+#lets-talk-section .lets-talk-left {
+  padding-top: 190px;
+}
