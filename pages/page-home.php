@@ -4,7 +4,11 @@
       We CREATE hospitality.
     </div>
     <br/>
-    <a href="#our-work-section" class="our-work-link text-orange"><i class="fa fa-angle-down animated bounce" aria-hidden="true"></i></a>
+    <a href="#our-work-section" class="our-work-link bounce">
+      <svg xmlns="http://www.w3.org/2000/svg" width="49" height="26" viewBox="0 0 49 26">
+        <path fill="#F3B237" fill-rule="nonzero" d="M24.499 22.26L2.82.894A1.368 1.368 0 0 0 .9.894a1.321 1.321 0 0 0 0 1.894l22.643 22.318a1.368 1.368 0 0 0 1.921 0L48.098 2.788c.261-.258.402-.605.402-.942 0-.337-.13-.684-.402-.942a1.368 1.368 0 0 0-1.922 0L24.5 22.26z"/>
+      </svg>
+    </a>
   </div>
 </div>
 
