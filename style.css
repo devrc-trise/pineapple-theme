@@ -106,11 +106,15 @@ footer .social-links img {
 .link-lg.text-orange {
   border-bottom: 2px solid #F3B237;
 }
+.home .navpine {
+  padding-top: 55px;
+}
 .navpine {
-  padding-top: 56px;
+  padding-top: 35px;
 }
 .navpine img.logo {
   height: 104px;
+  margin-bottom: 5px;
 }
 .lead-md {
   font-size: 1.625em;

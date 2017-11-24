@@ -16,7 +16,7 @@
           <?php if ($pagename): ?>
             <div class="row">
               <div class="col-md-10 offset-md-1">
-                <img class="logo" src="/wp-content/uploads/2017/11/pineapple-logo.png">
+                <img class="logo" src="/wp-content/uploads/2017/11/pineapple-dark-logo.png">
               </div>
             </div>
           <?php else: ?>
