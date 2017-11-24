@@ -221,6 +221,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin-right: 5px;
   margin-left: 5px;
 }
+.img-circle {
+  border-radius: 50%;
+}
+.img-circle.orange {
+  border: 7px solid #F3B237;
+}
 .mt10 {
   margin-top: 10px !important;
 }

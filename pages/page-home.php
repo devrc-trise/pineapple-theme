@@ -1,3 +1,5 @@
+<?php $this_page = $post; ?>
+
 <div class="cover-screen-wrapper">
   <div class="cover-screen text-center container-fluid">
     <div class="welcome-message text-center font-harmonia-bold">
@@ -16,7 +18,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7 offset-md-2">
-        <h1 class="text-uppercase">WE BRING YOUR VISION TO LIFE.</h1>
+        <h1 class="text-uppercase"><?php echo get_post_meta($this_page->ID, 'section_2_title', true); ?></h1>
       </div>
     </div>
     <div class="row">
@@ -24,10 +26,7 @@
         <div class="line-white mt10"></div>
       </div>
       <div class="col-md-4 our-work-list">
-        <p class="lead-md text-bold mb0">Project management</p>
-        <p class="lead-md text-bold mb0">Operations consultancy</p>
-        <p class="lead-md text-bold mb20">Creative direction</p>
-        <a class="link-lg text-white" href="/work">SEE OUR WORK</a>
+        <?php echo get_post_meta($this_page->ID, 'section_2_content', true); ?>
       </div>
     </div>
   </div>
@@ -37,59 +36,50 @@
   <div class="container">
     <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-md-3">
-              <img src="/wp-content/uploads/2017/11/testimonial-author.jpg" width="197px">
-            </div>
-            <div class="col-md-1">
-              <img class="left-quote" src="/wp-content/uploads/2017/11/left-quote.png">
-            </div>
-            <div class="col-md-7">
-              <p class="lead-lg font-harmonia-black mb20">
-                I’m a big believer in your environment affecting who you are. I can just get on with what I need to do without being distracted.
-              </p>
-              <p class="lead-md text-bold">Josh Newman</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-md-3">
-              <img src="/wp-content/uploads/2017/11/testimonial-author.jpg" width="197px">
-            </div>
-            <div class="col-md-1">
-              <img class="left-quote" src="/wp-content/uploads/2017/11/left-quote.png">
-            </div>
-            <div class="col-md-7">
-              <p class="lead-lg font-harmonia-black mb20">
-                I’m a big believer in your environment affecting who you are. I can just get on with what I need to do without being distracted.
-              </p>
-              <p class="lead-md text-bold">Josh Newman</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-md-3">
-              <img src="/wp-content/uploads/2017/11/testimonial-author.jpg" width="197px">
-            </div>
-            <div class="col-md-1">
-              <img class="left-quote" src="/wp-content/uploads/2017/11/left-quote.png">
-            </div>
-            <div class="col-md-7">
-              <p class="lead-lg font-harmonia-black mb20">
-                I’m a big believer in your environment affecting who you are. I can just get on with what I need to do without being distracted.
-              </p>
-              <p class="lead-md text-bold">Josh Newman</p>
+        <?php
+
+        $args = array(
+          'category_name' => 'testimonial',
+          'meta_key' => 'sort',
+          'orderby' => 'meta_value',
+          'order' => 'ASC'
+        );
+        $the_query = new WP_Query($args);
+        $postCount = 0;
+        while ($the_query->have_posts()) {
+          $postCount++;
+          $the_query->the_post();
+          $author_img = get_post_meta($post->ID, 'author_image', true);
+          $message = get_post_meta($post->ID, 'message', true);
+          ?>
+
+          <div class="carousel-item <?php echo $postCount == 1 ? 'active' : ''; ?>">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="<?php echo $author_img; ?>" width="204px" class="img-circle orange">
+              </div>
+              <div class="col-md-1">
+                <img class="left-quote" src="/wp-content/uploads/2017/11/left-quote.png">
+              </div>
+              <div class="col-md-7">
+                <p class="lead-lg font-harmonia-black mb20"><?php echo $message; ?></p>
+                <p class="lead-md text-bold"><?php echo the_title(); ?></p>
+              </div>
             </div>
           </div>
-        </div>
+
+          <?php
+        }
+
+        ?>
       </div>
       <ol class="carousel-indicators">
-        <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#testimonials-carousel" data-slide-to="1"></li>
-        <li data-target="#testimonials-carousel" data-slide-to="2"></li>
+        <?php
+          for ($i = 0; $i < $postCount; $i++) {
+            $class = ($i == 0) ? 'active' : '';
+            echo "<li data-target='#testimonials-carousel' data-slide-to='$i' class='$class'></li>";
+          }
+        ?>
       </ol>
     </div>
   </div>
@@ -99,7 +89,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h1 class="heading-lg">GET TO KNOW US<span class="text-orange">.</span></h1>
+        <h1 class="heading-lg"><?php echo get_post_meta($this_page->ID, 'section_4_title', true); ?></h1>
       </div>
       <div class="col-md-6">
         <div class="row">
@@ -107,8 +97,7 @@
             <div class="line-orange mb20"></div>
           </div>
         </div>
-        <p class="lead-md text-bold mb1em">We are well seasoned hospitality professionals who have worked with and for the biggest players in the UK market. Pun was intended.</p>
-        <a class="link-lg text-orange" href="">READ MORE ABOUT US</a>
+        <?php echo get_post_meta($this_page->ID, 'section_4_content', true); ?>
       </div>
     </div>
   </div>
@@ -166,13 +155,13 @@
       <div class="col-md-6 bg-orange lets-talk-left">
         <div class="row">
           <div class="col-md-9 offset-md-2">
-            <h1 class="heading-lg text-white">LET’S TALK.</h1>
+            <h1 class="heading-lg text-white"><?php echo get_post_meta($this_page->ID, 'section_6_title', true); ?></h1>
             <div class="row mb20">
               <div class="col-md-8">
                 <div class="line-white"></div>
               </div>
             </div>
-            <p class="lead-md text-bold text-white">We are well seasoned hospitality professionals who have worked with and for the biggest players in the UK market.</p>
+            <?php echo get_post_meta($this_page->ID, 'section_6_content', true); ?>
           </div>
         </div>
       </div>
