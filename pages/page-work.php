@@ -2,7 +2,7 @@
 
 $args = array(
   'category_name' => 'work',
-  'meta_key' => 'post_order',
+  'meta_key' => 'sort',
   'orderby' => 'meta_value',
   'order' => 'ASC'
 );
