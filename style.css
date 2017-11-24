@@ -106,15 +106,28 @@ footer .social-links img {
 .link-lg.text-orange {
   border-bottom: 2px solid #F3B237;
 }
-.home .navpine {
+.home .navbar {
   padding-top: 55px;
 }
-.navpine {
+.navbar {
   padding-top: 35px;
 }
-.navpine img.logo {
+.navbar img.logo {
   height: 104px;
-  margin-bottom: 5px;
+}
+.navbar.nothome .container {
+  display: block;
+}
+button.navbar-toggler {
+  border: 0;
+  height: 104px;
+  padding: 0;
+}
+.navbar-toggler-custom-icon {
+  width: 62px;
+  height: 10px;
+  display: block;
+  margin: 10px 0;
 }
 .lead-md {
   font-size: 1.625em;
