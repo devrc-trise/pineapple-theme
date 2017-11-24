@@ -10,12 +10,21 @@
 <body <?php body_class(); ?>>
   <div id="page">
     <header>
-      <nav class="navbar navbar-dark bg-transparent">
+      <!-- <nav class="navbarx navbar-darkx bg-transparent"> -->
+      <nav class="navpine bg-transparent">
         <div class="container">
-          <img class="logo" src="/wp-content/uploads/2017/11/pineapple-logo.png">
-          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
+          <?php if ($pagename): ?>
+            <div class="row">
+              <div class="col-md-10 offset-md-1">
+                <img class="logo" src="/wp-content/uploads/2017/11/pineapple-logo.png">
+              </div>
+            </div>
+          <?php else: ?>
+            <img class="logo" src="/wp-content/uploads/2017/11/pineapple-logo.png">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+          <?php endif; ?>
         </div>
       </nav>
       <!-- <div class="collapse" id="navbarToggleExternalContent">

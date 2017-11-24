@@ -15,4 +15,9 @@ function home_page_sc() {
   get_template_part('pages/page', 'home');
 }
 add_shortcode('home_page', 'home_page_sc');
+
+function work_page_sc() {
+  get_template_part('pages/page', 'work');
+};
+add_shortcode('work_page', 'work_page_sc');
 ?>

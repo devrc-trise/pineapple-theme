@@ -27,7 +27,7 @@
         <p class="lead-md text-bold mb0">Project management</p>
         <p class="lead-md text-bold mb0">Operations consultancy</p>
         <p class="lead-md text-bold mb20">Creative direction</p>
-        <a class="link-lg text-white" href="">SEE OUR WORK</a>
+        <a class="link-lg text-white" href="/work">SEE OUR WORK</a>
       </div>
     </div>
   </div>
