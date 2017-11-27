@@ -49,9 +49,6 @@
   z-index: 990;
 }
 
-/*@include media-breakpoint-up(xs) { width: 85%; }
-@include media-breakpoint-up(sm) { width: 50%; }
-@include media-breakpoint-up(md) { width: 25%; }*/
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
   .navbar-side {

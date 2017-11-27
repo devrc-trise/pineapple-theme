@@ -12,7 +12,7 @@
     <div class="row">
       <div class="col-md-6 bg-orange lets-talk-left">
         <div class="row full-height">
-          <div class="col-md-9 offset-md-2 margin-auto">
+          <div class="col-md-10 col-xl-9 offset-md-1 offset-xl-2 margin-auto">
             <h1 class="heading-lg text-white"><?php echo $title; ?></h1>
             <div class="row mb20">
               <div class="col-md-8">
@@ -25,16 +25,16 @@
       </div>
       <div class="col-md-6">
         <div class="row">
-          <div class="col-md-9 offset-md-1">
+          <div class="offset-xl-1 col-xl-9 col-lg-11 col-md-11">
             <?php echo do_shortcode($contact_form); ?>
           </div>
         </div>
       </div>
     </div>
-    <div class="row mt110">
-      <div class="col-md-8 offset-md-2">
-        <p class="lead-md text-white text-bold float-right">Address: <?php echo $address; ?></p>
-        <p class="lead-md text-white text-bold">Phone: <a class="text-white" href="tel:<?php echo str_replace(' ', '', $phone_number); ?>"><?php echo $phone_number; ?></a></p>
+    <div class="row contact-details">
+      <div class="offset-xl-2 col-xl-8 offset-md-1 col-md-10 clearfix">
+        <p class="lead-md text-white text-bold float-lg-left">Phone: <a class="text-white" href="tel:<?php echo str_replace(' ', '', $phone_number); ?>"><?php echo $phone_number; ?></a></p>
+        <p class="lead-md text-white text-bold float-lg-right">Address: <?php echo $address; ?></p>
       </div>
     </div>
   </div>

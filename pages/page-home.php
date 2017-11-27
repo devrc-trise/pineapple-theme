@@ -15,18 +15,20 @@
 </div>
 
 <div id="our-work-section" class="bg-orange text-white bg-bubble">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7 offset-md-2">
-        <h1 class="text-uppercase"><?php echo get_post_meta($this_page->ID, 'section_2_title', true); ?></h1>
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7 offset-xl-2 col-lg-8 offset-lg-2">
+          <h1 class="text-uppercase"><?php echo get_post_meta($this_page->ID, 'section_2_title', true); ?></h1>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 offset-md-2">
-        <div class="line-white mt10"></div>
-      </div>
-      <div class="col-md-4 our-work-list">
-        <?php echo get_post_meta($this_page->ID, 'section_2_content', true); ?>
+      <div class="row">
+        <div class="col-sm-5 col-md-6 col-lg-4 offset-xl-2 offset-lg-2">
+          <div class="line-white mt10 mb25"></div>
+        </div>
+        <div class="col-sm-7 col-md-6 col-lg-4 our-work-list">
+          <?php echo get_post_meta($this_page->ID, 'section_2_content', true); ?>
+        </div>
       </div>
     </div>
   </div>
@@ -55,15 +57,19 @@
 
           <div class="carousel-item <?php echo $postCount == 1 ? 'active' : ''; ?>">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-3 author">
                 <img src="<?php echo $author_img; ?>" width="204px" class="img-circle orange">
               </div>
-              <div class="col-md-1">
-                <img class="left-quote" src="/wp-content/uploads/2017/11/left-quote.png">
-              </div>
-              <div class="col-md-7">
-                <p class="lead-lg font-harmonia-black mb20"><?php echo $message; ?></p>
-                <p class="lead-md text-bold"><?php echo the_title(); ?></p>
+              <div class="col-md-9">
+                <div class="row">
+                  <div class="col-2 col-xl-2 text-right">
+                    <img class="left-quote" src="/wp-content/uploads/2017/11/left-quote.png">
+                  </div>
+                  <div class="col-10 col-xl-9">
+                    <p class="lead-lg font-harmonia-black mb20"><?php echo $message; ?></p>
+                    <p class="lead-md text-bold"><?php echo the_title(); ?></p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -106,32 +112,32 @@
 <div id="clients-sections" class="bg-gray">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-4">
         <div class="img-wrapper text-center">
           <img src="/wp-content/uploads/2017/11/marriott.png" width="156px">
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-4">
         <div class="img-wrapper text-center">
           <img src="/wp-content/uploads/2017/11/charlottes-w5.png" width="255px">
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-4">
         <div class="img-wrapper text-center">
           <img src="/wp-content/uploads/2017/11/labs.png" width="187px">
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-4">
         <div class="img-wrapper text-center">
           <img src="/wp-content/uploads/2017/11/rut.png" width="121px">
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-4">
         <div class="img-wrapper text-center">
           <img src="/wp-content/uploads/2017/11/bnl.png" width="292px">
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-6 col-md-4">
         <div class="img-wrapper text-center">
           <img src="/wp-content/uploads/2017/11/sager-wild.png" width="195px">
         </div>
@@ -147,7 +153,7 @@
 
 <div id="lets-talk-section">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row hidden-sm-down">
       <div class="col-md-6 bg-gray pt20">&nbsp;</div>
       <div class="col-md-6 pt20">&nbsp;</div>
     </div>
@@ -175,7 +181,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row hidden-sm-down">
       <div class="col-md-8 bg-orange pt65">&nbsp;</div>
       <div class="col-md-4 bg-gray pt65">&nbsp;</div>
     </div>

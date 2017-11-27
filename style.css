@@ -42,7 +42,7 @@ button:focus {
 }
 h1 {
   font-size: 75px;
-  line-height: 80px;
+  line-height: 1.1em;
   font-family: HarmoniaSansProCyr Black;
 }
 footer {
@@ -94,7 +94,7 @@ footer .social-links img {
 }
 .line-orange {
   border-top: 8px solid #F3B237;
-  max-width: 340px;
+  /*max-width: 340px;*/
 }
 .link-lg {
   font-size: 1.875em;
@@ -243,9 +243,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .mt50 {
   margin-top: 50px !important;
 }
-.mt110 {
-  margin-top: 110px !important;
-}
 .mb0 {
   margin-bottom: 0 !important;
 }
@@ -300,19 +297,31 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 5em;
   position: absolute;
   bottom: 20px;
+  left: 0;
+  right: 0;
 }
-#our-work-section .container {
-  padding: 280px 0;
+#our-work-section {
+  height: 100vh;
+  min-height: 568px;
+  overflow: hidden;
+  display: table;
+  width: 100%;
+}
+#our-work-section .wrapper {
+  /*padding: 280px 0;*/
+  display: table-cell;
+  vertical-align: middle;
 }
 #testimonials-section {
   padding: 150px 0 60px;
 }
 #testimonials-section .carousel-item {
   min-height: 300px;
+  /*margin-bottom: 50px !important;*/
 }
 #testimonials-section img.left-quote {
   width: 75px;
-  max-width: 75px;
+  /*max-width: 75px;*/
 }
 #know-us-section {
   padding: 180px 0 160px;
@@ -363,4 +372,88 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 #contact-lets-talk-section .wpforms-confirmation-container-full {
   color: #fff;
+}
+.contact-details {
+  margin-top: 110px;
+}
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+  .work-list-section h1 {
+    font-size: 3em;
+  }
+  .welcome-message {
+    font-size: 2.5em;
+    line-height: 1.2em;
+  }
+  #testimonials-section .carousel-item {
+    min-height: 550px;
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+  #testimonials-section .carousel-item {
+    min-height: 450px;
+  }
+}
+/*Extra small devices - small devices */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 4em;
+  }
+  h1.heading-lg {
+    font-size: 5em;
+  }
+  .work-list-section {
+    padding: 150px 0 100px;
+  }
+  #testimonials-section {
+    padding: 80px 0 40px;
+  }
+  #testimonials-section .author {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  #testimonials-section .author img {
+    width: 150px;
+  }
+  .lead-lg {
+    font-size: 1.75em;
+  }
+  #know-us-section {
+    padding: 120px 0 100px;
+  }
+  .hidden-sm-down {
+    display: none;
+  }
+  #lets-talk-section .lets-talk-left {
+    padding-top: 100px;
+  }
+  .pineapple-form.wpforms-container-full .wpforms-form button[type=submit].btn-primary {
+    width: 100%;
+  }
+  .navbar img.logo, button.navbar-toggler {
+    height: 90px;
+  }
+  #contact-lets-talk-section {
+    padding-top: 110px;
+  }
+  .contact-details {
+    margin-top: 60px;
+  }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  #testimonials-section .carousel-item {
+    min-height: 350px;
+  }
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
 }
