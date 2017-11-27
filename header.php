@@ -40,7 +40,23 @@
         <nav class="navbar navbar-dark bg-transparent">
           <div class="container">
             <img class="logo" src="/wp-content/uploads/2017/11/pineapple-logo.png">
+            <button class="navbar-toggler float-right navbar-toggle" id="navbarSideButton" type="button">
+              <span class="navbar-toggler-custom-icon">&nbsp;</span>
+              <span class="navbar-toggler-custom-icon">&nbsp;</span>
+              <span class="navbar-toggler-custom-icon">&nbsp;</span>
+            </button>
           </div>
+          <!-- navbar-side will go here -->
+          <ul class="navbar-side" id="navbarSide">
+            <?php
+            foreach (wp_get_nav_menu_items('Main Menu') as $menu_item) {
+              echo "<li class='navbar-side-item'>
+                      <a href='$menu_item->url' class='side-link text-white lead-md text-uppercase'>$menu_item->title</a>
+                    </li>";
+            }
+            ?>
+          </ul>
+          <div class="overlay"></div>
         </nav>
       <?php endif; ?>
     </header>
