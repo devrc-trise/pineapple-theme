@@ -12,7 +12,7 @@ while ($the_query->have_posts()) {
   $background = get_post_meta($post->ID, 'background_image', true);
   ?>
 
-  <div class="work-list-section mt20" style="background-image: url(<?php echo $background ?>);">
+  <div class="work-list-section" style="background-image: url(<?php echo $background ?>);">
     <div class="container text-white">
       <div class="row">
         <div class="col-md-10 offset-md-1">

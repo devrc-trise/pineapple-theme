@@ -168,7 +168,9 @@
       <div class="col-md-6">
         <div class="row">
           <div class="col-md-9 offset-md-1">
-            <?php echo do_shortcode('[wpforms id="6"]') ?>
+            <div class="mt50 pb60">
+              <?php echo do_shortcode(get_post_meta($this_page->ID, 'contact_form', true)) ?>
+            </div>
           </div>
         </div>
       </div>

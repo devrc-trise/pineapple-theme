@@ -22,4 +22,9 @@ function work_page_sc() {
   get_template_part('pages/page', 'work');
 };
 add_shortcode('work_page', 'work_page_sc');
+
+function contact_page_sc() {
+  get_template_part('pages/page', 'contact');
+};
+add_shortcode('contact_page', 'contact_page_sc');
 ?>

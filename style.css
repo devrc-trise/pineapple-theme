@@ -140,8 +140,8 @@ h1.heading-lg {
   line-height: 1em;
 }
 .pineapple-form.wpforms-container-full {
-  margin-top: 50px;
-  margin-bottom: 85px;
+  /*margin-top: 50px;
+  margin-bottom: 85px;*/
 }
 .pineapple-form.wpforms-container-full .wpforms-form input[type=text],
 .pineapple-form.wpforms-container-full .wpforms-form input[type=email],
@@ -172,11 +172,11 @@ h1.heading-lg {
 .pineapple-form.wpforms-container-full .wpforms-form .wpforms-submit-container {
   margin-top: 5px;
 }
-#wpforms-confirmation-6.wpforms-confirmation-container-full {
+.wpforms-confirmation-container-full {
   font-size: 1.625em;
-  padding: 150px 0;
-  background-color: transparent;
-  border: 0;
+  padding: 150px 0 !important;
+  background-color: transparent !important;
+  border: 0 !important;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #868e96 !important;
@@ -227,17 +227,33 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .img-circle.orange {
   border: 7px solid #F3B237;
 }
+.full-height {
+  height: 100%;
+}
+.margin-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .mt10 {
   margin-top: 10px !important;
 }
 .mt20 {
   margin-top: 20px !important;
 }
+.mt50 {
+  margin-top: 50px !important;
+}
+.mt110 {
+  margin-top: 110px !important;
+}
 .mb0 {
   margin-bottom: 0 !important;
 }
 .mb20 {
   margin-bottom: 20px !important;
+}
+.mb25 {
+  margin-bottom: 25px !important;
 }
 .mb1em {
   margin-bottom: 1em !important;
@@ -247,6 +263,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .pt65 {
   padding-top: 65px !important;
+}
+.pb60 {
+  padding-bottom: 60px !important;
 }
 
 
@@ -308,10 +327,40 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 #lets-talk-section .lets-talk-left {
   padding-top: 190px;
 }
+#lets-talk-section .wpforms-confirmation-container-full {
+  color: #4a4a4a;
+}
 
 
 /* Work Page */
 .work-list-section {
   background-size: cover;
   padding: 200px 0 120px;
+}
+.work-list-section:first-child {
+  margin-top: 0;
+}
+.work-list-section {
+  margin-top: 20px;
+}
+
+/* Contact Page */
+#contact-lets-talk-section {
+  padding: 145px 0 0;
+}
+#contact-lets-talk-section .pineapple-form.wpforms-container-full .wpforms-form input[type=text],
+#contact-lets-talk-section .pineapple-form.wpforms-container-full .wpforms-form input[type=email],
+#contact-lets-talk-section .pineapple-form.wpforms-container-full .wpforms-form input[type=tel],
+#contact-lets-talk-section .pineapple-form.wpforms-container-full .wpforms-form textarea {
+  background-color: #fff;
+}
+.pineapple-form.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+  height: 144px;
+}
+#contact-lets-talk-section .pineapple-form.wpforms-container-full .wpforms-form button[type=submit].btn-primary.btn-lg {
+  background-color: #fff;
+  color: #F3B237;
+}
+#contact-lets-talk-section .wpforms-confirmation-container-full {
+  color: #fff;
 }

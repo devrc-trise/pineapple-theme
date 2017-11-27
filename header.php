@@ -11,7 +11,7 @@
   <div id="page">
     <header>
       <?php if ($pagename): ?>
-        <nav class="navbar navbar-light nothome" role="navigation">
+        <nav class="navbar navbar-light nothome mb25" role="navigation">
           <div class="container">
             <div class="row">
               <div class="col-md-10 offset-md-1">
@@ -26,22 +26,16 @@
           </div>
           <!-- navbar-side will go here -->
           <ul class="navbar-side" id="navbarSide">
-            <li class="navbar-side-item text-center">
-              <a href="/" class="side-link text-white lead-md">HOME</a>
-            </li>
-            <li class="navbar-side-item text-center">
-              <a href="/work" class="side-link text-white lead-md">OUR WORK</a>
-            </li>
-            <li class="navbar-side-item text-center">
-              <a href="/about" class="side-link text-white lead-md">ABOUT US</a>
-            </li>
-            <li class="navbar-side-item text-center">
-              <a href="/contact" class="side-link text-white lead-md">CONTACT US</a>
-            </li>
+            <?php
+            foreach (wp_get_nav_menu_items('Main Menu') as $menu_item) {
+              echo "<li class='navbar-side-item'>
+                      <a href='$menu_item->url' class='side-link text-white lead-md text-uppercase'>$menu_item->title</a>
+                    </li>";
+            }
+            ?>
           </ul>
           <div class="overlay"></div>
         </nav>
-
       <?php else: ?>
         <nav class="navbar navbar-dark bg-transparent">
           <div class="container">
