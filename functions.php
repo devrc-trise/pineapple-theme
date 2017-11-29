@@ -27,4 +27,9 @@ function contact_page_sc() {
   get_template_part('pages/page', 'contact');
 };
 add_shortcode('contact_page', 'contact_page_sc');
+
+function about_page_sc() {
+  get_template_part('pages/page', 'about');
+};
+add_shortcode('about_page', 'about_page_sc');
 ?>

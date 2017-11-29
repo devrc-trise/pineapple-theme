@@ -1,7 +1,7 @@
 <?php $this_page = $post; ?>
 
 <div class="cover-screen-wrapper">
-  <div class="cover-screen text-center container-fluid">
+  <div class="cover-screen text-center container-fluid" style="background-image: url('<?php echo get_post_meta($this_page->ID, 'section_1_background_image', true); ?>');">
     <div class="welcome-message text-center font-harmonia-bold">
       We CREATE hospitality.
     </div>

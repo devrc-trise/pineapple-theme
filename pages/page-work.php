@@ -14,8 +14,8 @@ while ($the_query->have_posts()) {
 
   <div class="work-list-section" style="background-image: url(<?php echo $background ?>);">
     <div class="container text-white">
-      <div class="row">
-        <div class="col-md-10 offset-md-1">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
           <div class="row">
             <div class="col-xs-10 col-md-8">
               <h1 class="text-uppercase"><?php echo the_title(); ?></h1>
