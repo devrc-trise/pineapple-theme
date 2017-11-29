@@ -399,6 +399,21 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 /* About Page */
 #about-welcome-section {
   padding: 250px 0 215px;
+  position: relative;
+  overflow: hidden;
+}
+#about-welcome-section video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
 }
 #owners-section {
   padding: 50px 0 100px;
@@ -482,10 +497,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   .play-button {
     position: relative;
     display: block;
-    /*margin-bottom: 20px;*/
+    margin-bottom: 10px;
   }
   .play-button svg {
     width: 60px;
+    height: 60px;
   }
   #about-welcome-section {
     padding: 100px 0 100px;
