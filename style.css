@@ -256,6 +256,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .mt20 {
   margin-top: 20px !important;
 }
+.mt25 {
+  margin-top: 25px !important;
+}
 .mt50 {
   margin-top: 50px !important;
 }
@@ -280,6 +283,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .pt65 {
   padding-top: 65px !important;
 }
+.pb25 {
+  padding-bottom: 25px !important;
+}
 .pb60 {
   padding-bottom: 60px !important;
 }
@@ -299,14 +305,23 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background-size: cover;
   background-position: top center;
 }
-.welcome-message {
+#welcome-message {
+  width:100%;
+  height:100%;
+  display:block;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  text-align: center;
+  opacity: 1;
+}
+.welcome-message-container {
   font-size: 55px;
-  color: #fff;
-  padding: 15px 50px 2px;
-  background-color: #F3B237;
-  line-height: 66px;
-  display: inline-block;
-  margin-top: 40vh;
+  /*color: #fff;*/
+  /*padding: 15px 50px 2px;*/
+  /*background-color: #F3B237;*/
+  /*line-height: 66px;*/
+  /*display: inline-block;*/
+  padding-top: 30vh;
 }
 .our-work-list p {
   line-height: 1.4em;
@@ -319,14 +334,14 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   right: 0;
 }
 #our-work-section {
-  height: 100vh;
-  min-height: 568px;
+  /*height: 100vh;*/
+  /*min-height: 568px;*/
   overflow: hidden;
   display: table;
   width: 100%;
 }
 #our-work-section .wrapper {
-  /*padding: 280px 0;*/
+  padding: 160px 0 150px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -349,7 +364,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 #clients-sections .img-wrapper {
   line-height: 121px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 #lets-talk-section .lets-talk-left {
   padding-top: 190px;
@@ -448,6 +463,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   #testimonials-section .carousel-item {
     min-height: 550px;
   }
+  .hidden-xs-down {
+    display: none;
+  }
 }
 /*Extra small devices - small devices*/
 @media (max-width: 767px) {
@@ -511,6 +529,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 @media (min-width: 576px) and (max-width: 767px) {
   #testimonials-section .carousel-item {
     min-height: 450px;
+  }
+}
+/*Small devices - Extra large*/
+@media (min-width: 576px) {
+  .hidden-sm-up {
+    display: none;
   }
 }
 /*Medium devices (tablets, 768px and up)*/
