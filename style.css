@@ -360,11 +360,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   padding: 180px 0 160px;
 }
 #clients-sections {
-  padding: 90px 0;
+  padding: 50px 0;
 }
 #clients-sections .img-wrapper {
   line-height: 121px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 #lets-talk-section .lets-talk-left {
   padding-top: 190px;
