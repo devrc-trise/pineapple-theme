@@ -89,12 +89,22 @@ footer .social-links img {
 .text-orange, .text-orange:hover {
   color: #F3B237;
 }
+.line-white-xs {
+  border-top: 4px solid #fff;
+}
 .line-white {
   border-top: 8px solid #fff;
 }
 .line-orange {
   border-top: 8px solid #F3B237;
   /*max-width: 340px;*/
+}
+.line-separator {
+  display: inline-block;
+  width: 74px;
+  height: 100%;
+  margin-right: 18px;
+  margin-top: 1.5em;
 }
 .link-lg {
   font-size: 1.875em;
@@ -141,6 +151,9 @@ button.navbar-toggler {
 }
 .lead-lg {
   font-size: 1.875em;
+}
+.lead-xl {
+  font-size: 2.188em;
 }
 h1.heading-lg {
   font-size: 5.625em;
@@ -387,6 +400,14 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .work-list-section {
   margin-top: 20px;
+}
+.work-right p {
+  margin-bottom: .6em;
+  white-space: nowrap;
+  font-size: 1.125em;
+}
+.work-right p.lead-xl {
+  font-size: 2.188em;
 }
 
 /* Contact Page */
