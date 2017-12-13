@@ -5,6 +5,9 @@
     <!-- <div class="welcome-message text-center font-harmonia-bold">
       We CREATE hospitality.
     </div> -->
+    <video loop autoplay>
+      <source src="<?php echo get_post_meta($this_page->ID, 'section_1_background_video', true); ?>" type="video/mp4">
+    </video>
     <div class="welcome-message-container font-harmonia-bold">
       <div id="welcome-message" class="text-center font-harmonia-bold"></div>
     </div>
@@ -40,47 +43,51 @@
 <div id="testimonials-section" class="bg-gray">
   <div class="container">
     <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <?php
+      <div class="row justify-content-center">
+        <div class="col-md-11">
+          <div class="carousel-inner" role="listbox">
+            <?php
 
-        $args = array(
-          'category_name' => 'testimonial',
-          'meta_key' => 'sort',
-          'orderby' => 'meta_value',
-          'order' => 'ASC'
-        );
-        $the_query = new WP_Query($args);
-        $postCount = 0;
-        while ($the_query->have_posts()) {
-          $postCount++;
-          $the_query->the_post();
-          $author_img = get_post_meta($post->ID, 'author_image', true);
-          $message = get_post_meta($post->ID, 'message', true);
-          ?>
+            $args = array(
+              'category_name' => 'testimonial',
+              'meta_key' => 'sort',
+              'orderby' => 'meta_value',
+              'order' => 'ASC'
+            );
+            $the_query = new WP_Query($args);
+            $postCount = 0;
+            while ($the_query->have_posts()) {
+              $postCount++;
+              $the_query->the_post();
+              $author_img = get_post_meta($post->ID, 'author_image', true);
+              $message = get_post_meta($post->ID, 'message', true);
+              ?>
 
-          <div class="carousel-item <?php echo $postCount == 1 ? 'active' : ''; ?>">
-            <div class="row">
-              <div class="col-md-3 author">
-                <img src="<?php echo $author_img; ?>" width="204px" class="img-circle orange">
-              </div>
-              <div class="col-md-9">
-                <div class="row">
-                  <div class="col-2 col-xl-2 text-right">
-                    <img class="left-quote" src="/wp-content/uploads/2017/11/left-quote.png">
+              <div class="carousel-item <?php echo $postCount == 1 ? 'active' : ''; ?>">
+                <div class="row justify-content-center">
+                  <div class="col-md-3 author">
+                    <img src="<?php echo $author_img; ?>" width="204px" class="img-circle orange">
                   </div>
-                  <div class="col-10 col-xl-9">
-                    <p class="lead-lg font-harmonia-black mb20"><?php echo $message; ?></p>
-                    <p class="lead-md text-bold"><?php echo the_title(); ?></p>
+                  <div class="col-md-9">
+                    <div class="row justify-content-center">
+                      <div class="col-2 col-xl-2 text-right">
+                        <img class="left-quote" src="/wp-content/uploads/2017/11/left-quote.png">
+                      </div>
+                      <div class="col-10 col-xl-9">
+                        <p class="lead-sm mb20"><?php echo $message; ?></p>
+                        <p class="lead-md font-harmonia-bold"><?php echo the_title(); ?></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+
+              <?php
+            }
+
+            ?>
           </div>
-
-          <?php
-        }
-
-        ?>
+        </div>
       </div>
       <ol class="carousel-indicators">
         <?php
@@ -90,6 +97,14 @@
           }
         ?>
       </ol>
+      <a class="carousel-control-prev" href="#testimonials-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#testimonials-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </div>
 </div>
@@ -126,7 +141,7 @@
       <div class="col-md-6 bg-orange lets-talk-left">
         <div class="row">
           <div class="col-md-9 offset-md-2">
-            <h1 class="heading-lg text-white"><?php echo get_post_meta($this_page->ID, 'section_6_title', true); ?></h1>
+            <h1 class="text-white"><?php echo get_post_meta($this_page->ID, 'section_6_title', true); ?></h1>
             <div class="row mb20">
               <div class="col-md-8">
                 <div class="line-white"></div>

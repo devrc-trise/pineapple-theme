@@ -11,11 +11,11 @@
   <div id="page">
     <header>
       <?php if ($pagename): ?>
-        <nav class="navbar navbar-light nothome pb25 bg-gray" role="navigation">
+        <nav class="navbar navbar-light nothome pb25" role="navigation">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-10">
-                <a href="/"><img class="logo" src="/wp-content/uploads/2017/12/pineapple-landscape-dark-logo.png"></a>
+                <a href="/"><img class="logo" src="/wp-content/uploads/2017/12/pineapple-landscape-logo.png"></a>
                 <button class="navbar-toggler float-right navbar-toggle" id="navbarSideButton" type="button">
                   <span class="navbar-toggler-custom-icon bg-orange">&nbsp;</span>
                   <span class="navbar-toggler-custom-icon bg-orange">&nbsp;</span>
@@ -39,7 +39,7 @@
       <?php else: ?>
         <nav class="navbar navbar-dark bg-transparent">
           <div class="container">
-            <img class="logo" src="/wp-content/uploads/2017/11/pineapple-logo.png">
+            <img class="logo" src="/wp-content/uploads/2017/12/pineapple-landscape-logo.png">
             <button class="navbar-toggler float-right navbar-toggle" id="navbarSideButton" type="button">
               <span class="navbar-toggler-custom-icon">&nbsp;</span>
               <span class="navbar-toggler-custom-icon">&nbsp;</span>

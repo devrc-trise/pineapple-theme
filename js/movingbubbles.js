@@ -7,19 +7,33 @@
  * An object that stores different settings for the bubbles
  */
 var bubbleOptions = {
-	maxBubbles     : 250,   //A bubble ceiling, for high resolution monitors
+	// maxBubbles     : 250,   //A bubble ceiling, for high resolution monitors
+	// timer          : -1,    //The interval time
+	// tick           : 100,   //The tick speed
+	// bubbles        : [],    //The array of bubbles
+	// hue            : 188,   //The hue
+	// hueRand        : 20,    //The hue variance
+	// saturation     : 63,    //The saturation
+	// saturationRand : 10,    //The saturation variance
+	// light          : 57,    //The lightness
+	// lightRand      : 10,    //The lightness variance
+	// opacityFactor  : 3,     //What Math.random() opacity should be divided by
+	// minOpacity     : 0.1,   //The minimum opacity
+	// ratio          : 45000, //The bubble:pixel ratio
+
+	maxBubbles     : 15,   //A bubble ceiling, for high resolution monitors
 	timer          : -1,    //The interval time
 	tick           : 100,   //The tick speed
 	bubbles        : [],    //The array of bubbles
-	hue            : 188,   //The hue
-	hueRand        : 20,    //The hue variance
-	saturation     : 63,    //The saturation
-	saturationRand : 10,    //The saturation variance
-	light          : 57,    //The lightness
-	lightRand      : 10,    //The lightness variance
-	opacityFactor  : 3,     //What Math.random() opacity should be divided by
-	minOpacity     : 0.1,   //The minimum opacity
-	ratio          : 45000, //The bubble:pixel ratio
+	hue            : 39,   //The hue
+	hueRand        : 0,    //The hue variance
+	saturation     : 86,    //The saturation
+	saturationRand : 0,    //The saturation variance
+	light          : 66,    //The lightness
+	lightRand      : 0,    //The lightness variance
+	opacityFactor  : 1,     //What Math.random() opacity should be divided by
+	minOpacity     : 1,   //The minimum opacity
+	ratio          : 90000, //The bubble:pixel ratio
 	update		   : function(tick) { //Function to change the tick timer
 		//Since IE8 and below don't support HSLA colors,
 		//do nothing for these browsers
@@ -117,17 +131,15 @@ Bubble.prototype.create = function() {
 	this.yVel = (Math.random() * 4) - 2;
 
 	//Set the size
-	this.diam = Math.floor(Math.random() * 160) + 40;
+	// this.diam = Math.floor(Math.random() * 160) + 40;
+	this.diam = Math.floor(Math.random() * 160) + 100;
 	this.e.style.width=this.diam + "px";
 	this.e.style.height=this.diam + "px";
 
 	//Set the color, with default bubbleOptions it is a bluish color
-	// var hue = Math.floor(Math.random()*bubbleOptions.hueRand) + bubbleOptions.hue;
-	var hue = Math.floor(Math.random()*bubbleOptions.hueRand) + 0;
-	// var saturation = Math.floor(Math.random() * bubbleOptions.saturationRand) + bubbleOptions.saturation;
-	var saturation = Math.floor(Math.random() * bubbleOptions.saturationRand) + 0;
-	// var light = Math.floor(Math.random()*bubbleOptions.lightRand) + bubbleOptions.light;
-	var light = Math.floor(Math.random()*bubbleOptions.lightRand) + 100;
+	var hue = Math.floor(Math.random()*bubbleOptions.hueRand) + bubbleOptions.hue;
+	var saturation = Math.floor(Math.random() * bubbleOptions.saturationRand) + bubbleOptions.saturation;
+	var light = Math.floor(Math.random()*bubbleOptions.lightRand) + bubbleOptions.light;
 	var opacity = Math.min( //The opacity must be <= 1
 	                  Math.max( //The random opacity must be >= minOpacity
 	                      Math.random()/bubbleOptions.opacityFactor,
@@ -138,7 +150,7 @@ Bubble.prototype.create = function() {
 	var hsla="hsla("+hue+","+saturation+"%,"+light+"%,"+opacity+")";
 	this.e.style.backgroundColor = hsla;
 
-	//Set the glow
+	// Set the glow
 	this.e.style.boxShadow= "0 0 "+ (Math.floor(Math.random()*10)+5)
 	                        + "px "+hsla;
 
