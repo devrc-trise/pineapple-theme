@@ -17,7 +17,7 @@
     </div>
     <div class="col-sm-6 col-md-4 hidden-xs-down">
       <div class="img-wrapper text-center">
-        <img src="/wp-content/uploads/2017/11/rut.png" width="121px">
+        <img src="/wp-content/uploads/2017/12/rut.png" width="121px">
       </div>
     </div>
     <div class="col-sm-6 col-md-4 hidden-xs-down">
@@ -37,7 +37,7 @@
     </div>
     <div class="col-sm-6 col-md-4 hidden-xs-down">
       <div class="img-wrapper text-center">
-        <img src="/wp-content/uploads/2017/11/brewdog.jpg" width="87px">
+        <img src="/wp-content/uploads/2017/12/brewdog.png" width="87px">
       </div>
     </div>
   </div>
