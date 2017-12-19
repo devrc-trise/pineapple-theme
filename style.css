@@ -334,6 +334,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .cover-screen-wrapper {
   height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 .cover-screen {
   top: 0;
@@ -626,6 +628,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     position: absolute;
     top: 0;
     right: 0;
+  }
+  #about-contact-section .pineapple-form.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+    max-height: 144px;
   }
   #about-contact-section .pineapple-form.wpforms-container-full .wpforms-form .wpforms-submit-container {
     position: absolute;

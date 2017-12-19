@@ -12,4 +12,22 @@ jQuery( document ).ready(function($) {
     animationData: animationData
   };
   var anim = bodymovin.loadAnimation(params);
+
+  var resizeSvg = function() {
+    var currWidth = parseInt($('#welcome-message > svg').attr('width'));
+    if (window.innerWidth <= 575 && currWidth != 800) {
+      console.log('go small');
+      $('#welcome-message > svg').removeAttr('viewBox');
+      $('#welcome-message > svg').each(function () { $(this)[0].setAttribute('viewBox', '320 0 800 527') });
+      $('#welcome-message > svg').attr('width', '800');
+    } else if (window.innerWidth > 575 && currWidth != 1440) {
+      console.log('go big');
+      $('#welcome-message > svg').removeAttr('viewBox');
+      $('#welcome-message > svg').each(function () { $(this)[0].setAttribute('viewBox', '0 0 1440 527') });
+      $('#welcome-message > svg').attr('width', '1440');
+    }
+  }
+
+  resizeSvg();
+  $(window).on('resize', resizeSvg);
 });
