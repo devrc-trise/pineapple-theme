@@ -15,19 +15,20 @@ Text Domain:	 WP-Bootstrap-Starter-child
 /* FONTS */
 @font-face {
   font-family: BrownPro Regular;
-  src: url("fonts/BrownPro-Regular.otf") format("opentype")
+  src: url("fonts/BrownPro-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/BrownPro-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: HarmoniaSansProCyr Black;
-  src: url("fonts/HarmoniaSansProCyr-Black.otf") format("opentype")
+  src: url("fonts/HarmoniaSansProCyr-Black.otf") format("opentype");
 }
 @font-face {
   font-family: HarmoniaSansProCyr Bold;
-  src: url("fonts/HarmoniaSansProCyr-Bold.otf") format("opentype")
+  src: url("fonts/HarmoniaSansProCyr-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: HarmoniaSansProCyr SemiBdIt;
-  src: url("fonts/HarmoniaSansProCyr-SemiBdIt.otf") format("opentype")
+  src: url("fonts/HarmoniaSansProCyr-SemiBdIt.otf") format("opentype");
 }
 
 body {
