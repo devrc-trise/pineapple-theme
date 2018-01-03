@@ -594,6 +594,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     height: 38px;
     width: 19.79px;
   }
+  #clients-sections .img-wrapper {
+    line-height: 80px;
+    margin-bottom: 0px;
+  }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
