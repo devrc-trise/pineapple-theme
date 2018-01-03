@@ -47,7 +47,7 @@ button:focus {
 h1 {
   font-size: 75px;
   line-height: 1.1em;
-  font-family: HarmoniaSansProCyr Black;
+  font-family: HarmoniaSansProCyr Black, BrownPro Regular;
 }
 footer {
   background-color: #606060;
@@ -82,13 +82,13 @@ footer .social-links img {
   color: #fff;
 }
 .font-harmonia-black {
-  font-family: HarmoniaSansProCyr Black;
+  font-family: HarmoniaSansProCyr Black, BrownPro Regular;
 }
 .font-harmonia-bold {
-  font-family: HarmoniaSansProCyr Bold;
+  font-family: HarmoniaSansProCyr Bold, BrownPro Regular;
 }
 .font-harmonia-semi {
-  font-family: HarmoniaSansProCyr SemiBdIt;
+  font-family: HarmoniaSansProCyr SemiBdIt, BrownPro Regular;
 }
 .text-orange, .text-orange:hover {
   color: #F3B237;
