@@ -31,12 +31,12 @@
       </div>
     </div>
     <div class="col-4 col-md-4x">
-      <div class="img-wrapper text-center">
+      <div class="img-wrapper text-center mb0">
         <img src="/wp-content/uploads/2017/11/goodman.png" width="358px">
       </div>
     </div>
     <div class="col-4 col-md-4x">
-      <div class="img-wrapper text-center">
+      <div class="img-wrapper text-center mb0">
         <img src="/wp-content/uploads/2017/12/brewdog.png" width="87px">
       </div>
     </div>
