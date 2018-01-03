@@ -1,8 +1,9 @@
 <?php $this_page = $post; ?>
+<?php $background_video = get_post_meta($this_page->ID, 'section_1_background_video', true); ?>
 
 <div id="about-welcome-section" class="cover-screen" style="background-image: url(<?php echo get_post_meta($this_page->ID, 'section_1_background_image', true); ?>);">
   <video id="welcome-video" loop>
-    <source src="<?php echo get_post_meta($this_page->ID, 'section_1_background_video', true); ?>" type="video/mp4">
+    <source src="<?php echo $background_video; ?>" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <div class="container text-white">
@@ -10,11 +11,13 @@
       <div class="col-lg-10">
         <div class="row">
           <div class="col-lg-11">
-            <span id="play-button" class="play-button" onclick="play();">
-              <svg xmlns="http://www.w3.org/2000/svg" width="95" height="95" viewBox="0 0 95 95">
-                <path fill="#FFF" fill-rule="nonzero" d="M47.5 0C21.267 0 0 21.266 0 47.5S21.267 95 47.5 95 95 73.734 95 47.5 73.733 0 47.5 0zm16.417 50.018l-23.75 14.844a2.97 2.97 0 0 1-4.542-2.518V32.656a2.968 2.968 0 0 1 4.542-2.518l23.75 14.844a2.972 2.972 0 0 1 0 5.036z"/>
-              </svg>
-            </span>
+            <?php if (!empty($background_video)) { ?>
+              <span id="play-button" class="play-button" onclick="play();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="95" height="95" viewBox="0 0 95 95">
+                  <path fill="#FFF" fill-rule="nonzero" d="M47.5 0C21.267 0 0 21.266 0 47.5S21.267 95 47.5 95 95 73.734 95 47.5 73.733 0 47.5 0zm16.417 50.018l-23.75 14.844a2.97 2.97 0 0 1-4.542-2.518V32.656a2.968 2.968 0 0 1 4.542-2.518l23.75 14.844a2.972 2.972 0 0 1 0 5.036z"/>
+                </svg>
+              </span>
+            <?php } ?>
             <div class="row">
               <div class="col-md-11">
                 <h1 class="text-uppercase">
