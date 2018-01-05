@@ -5,7 +5,7 @@
     <!-- <div class="welcome-message text-center font-harmonia-bold">
       We CREATE hospitality.
     </div> -->
-    <video loop autoplay>
+    <video loop autoplay class="hidden-xs-down">
       <source src="<?php echo get_post_meta($this_page->ID, 'section_1_background_video', true); ?>" type="video/mp4">
     </video>
     <div class="welcome-message-container font-harmonia-bold">
