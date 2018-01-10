@@ -15,7 +15,7 @@
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-10">
-                <a href="/"><img class="logo" src="/wp-content/uploads/2017/12/pineapple-landscape-logo.png"></a>
+                <a href="/"><img class="logo" src="/wp-content/uploads/2018/01/pineapple-landscape-logo-2.png"></a>
                 <button class="navbar-toggler float-right navbar-toggle" id="navbarSideButton" type="button">
                   <span class="navbar-toggler-custom-icon bg-orange">&nbsp;</span>
                   <span class="navbar-toggler-custom-icon bg-orange">&nbsp;</span>
@@ -39,7 +39,7 @@
       <?php else: ?>
         <nav class="navbar navbar-dark bg-transparent">
           <div class="container">
-            <img class="logo" src="/wp-content/uploads/2017/12/pineapple-landscape-logo.png">
+            <img class="logo" src="/wp-content/uploads/2018/01/pineapple-landscape-logo-2.png">
             <button class="navbar-toggler float-right navbar-toggle" id="navbarSideButton" type="button">
               <span class="navbar-toggler-custom-icon">&nbsp;</span>
               <span class="navbar-toggler-custom-icon">&nbsp;</span>
