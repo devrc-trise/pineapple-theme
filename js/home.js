@@ -30,4 +30,35 @@ jQuery( document ).ready(function($) {
 
   resizeSvg();
   $(window).on('resize', resizeSvg);
+
+  var backgroundVideo = new BackgroundVideo('.bv-video', {
+    src: [$('.bv-video').data('src')]
+  });
+
+  var parallaxElements = $('.parallax'),
+      parallaxQuantity = parallaxElements.length;
+
+  $(window).on('scroll', function () {
+    if (window.innerWidth > 575) {
+      window.requestAnimationFrame(function () {
+        for (var i = 0; i < parallaxQuantity; i++) {
+          var currentElement = parallaxElements.eq(i);
+          var scrolled = $(window).scrollTop();
+          currentElement.css({
+            'transform': 'translate3d(0,' + scrolled * 0.3 + 'px, 0)'
+          });
+        }
+      });
+    }
+  });
+
+  if (window.innerWidth > 575) {
+    $('.wpforms-field, .wpforms-submit').attr('data-aos', 'fade-left');
+  } else {
+    $('.wpforms-field, .wpforms-submit').attr('data-aos', 'fade-up');
+  }
+
+  AOS.init({
+    duration: 1200,
+  })
 });

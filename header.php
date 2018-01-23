@@ -38,7 +38,7 @@
         </nav>
       <?php else: ?>
         <nav class="navbar navbar-dark bg-transparent">
-          <div class="container">
+          <div class="container parallax">
             <img class="logo" src="/wp-content/uploads/2018/01/pineapple-landscape-logo-2.png">
             <button class="navbar-toggler float-right navbar-toggle" id="navbarSideButton" type="button">
               <span class="navbar-toggler-custom-icon">&nbsp;</span>

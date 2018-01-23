@@ -5,9 +5,9 @@
     <!-- <div class="welcome-message text-center font-harmonia-bold">
       We CREATE hospitality.
     </div> -->
-    <video loop autoplay class="hidden-xs-down">
-      <source src="<?php echo get_post_meta($this_page->ID, 'section_1_background_video', true); ?>" type="video/mp4">
-    </video>
+    <span class="hidden-xs-down ">
+      <video loop autoplay class="bv-video" data-src="<?php echo get_post_meta($this_page->ID, 'section_1_background_video', true); ?>"></video>
+    </span>
     <div class="welcome-message-container font-harmonia-bold">
       <div id="welcome-message" class="text-center font-harmonia-bold"></div>
     </div>

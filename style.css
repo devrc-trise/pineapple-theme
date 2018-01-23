@@ -348,16 +348,22 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background-size: cover;
   background-position: top center;
 }
+/* Video wrap */
+.bv-video-wrap {
+  z-index: 0 !important;
+}
 .cover-screen video {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  /*top: 50%;
+  left: 50%;*/
+  top: 0;
+  left: 0;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  /*-webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);*/
   background-size: cover;
 }
 #welcome-message {
@@ -377,6 +383,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   /*line-height: 66px;*/
   /*display: inline-block;*/
   padding-top: 30vh;
+  position: absolute;
+  top: 0;
 }
 .our-work-list p {
   line-height: 1.4em;
