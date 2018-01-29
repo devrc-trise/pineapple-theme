@@ -60,7 +60,7 @@
 
             <div class="col-11 col-sm-10 col-md-5 <?php echo $postCount % 2 == 0 ? 'offset-md-1 offset-lg-2' : '' ?>">
               <div class="text-center mt50">
-                <img src="<?php echo get_post_meta($post->ID, 'picture', true); ?>" class="img-circle orange mb20" width="180px" />
+                <img src="<?php echo get_post_meta($post->ID, 'picture', true); ?>" class="img-circle orange mb20" width="180px" data-main="<?php echo get_post_meta($post->ID, 'picture', true); ?>" data-hover="<?php echo get_post_meta($post->ID, 'picture_hover', true); ?>" />
                 <p class="lead-md font-harmonia-black mb15"><?php echo the_title(); ?></p>
               </div>
               <div class="lead-xs"><?php echo the_content(); ?></div>

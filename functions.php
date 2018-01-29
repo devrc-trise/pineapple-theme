@@ -34,6 +34,7 @@ function contact_page_sc() {
 add_shortcode('contact_page', 'contact_page_sc');
 
 function about_page_sc() {
+  wp_enqueue_script('about-script', get_stylesheet_directory_uri().'/js/about.js', array('jquery'));
   get_template_part('pages/page', 'about');
 };
 add_shortcode('about_page', 'about_page_sc');
