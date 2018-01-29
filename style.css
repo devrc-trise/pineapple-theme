@@ -261,13 +261,16 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   -webkit-animation-iteration-count: infinite;
 }
 .carousel-indicators .active {
-  background-color: #4a4a4a;
-}
-.carousel-indicators li {
   width: 16px;
   height: 16px;
+  margin-top: -2px;
+  background-color: #F3B237;
+}
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: rgba(74, 74, 74, 0.4);
+  background-color: rgba(74, 74, 74, 0.6);
   margin-right: 5px;
   margin-left: 5px;
 }
@@ -663,4 +666,20 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 
+}
+
+#testimonials-section .carousel-item {
+  transition: none !important;
+  background-color: #F7F7F7;
+}
+#testimonials-section .carousel-item-left, #testimonials-section .carousel-item-right {
+  -webkit-transform: none !important;
+  transform: none !important;
+  z-index: 1;
+}
+#testimonials-section .carousel-item-next, #testimonials-section .carousel-item-prev {
+  transition: -webkit-transform .6s ease !important;
+  transition: transform .6s ease !important;
+  transition: transform .6s ease,-webkit-transform .6s ease !important;
+  z-index: 2;
 }
