@@ -452,7 +452,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .work-list-section {
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   padding: 200px 0 120px;
 }
 .work-list-section:first-child {
