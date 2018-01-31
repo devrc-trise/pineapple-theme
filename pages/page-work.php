@@ -11,11 +11,12 @@
   while ($the_query->have_posts()) {
     $the_query->the_post();
     $background = get_post_meta($post->ID, 'background_image', true);
+    $background_mobile = get_post_meta($post->ID, 'background_image_mobile', true) ?: $background;
     $right_title = get_post_meta($post->ID, 'right_title', true);
     $right_content = get_post_meta($post->ID, 'right_content', true);
     ?>
 
-    <div class="work-list-section" style="background-image: url(<?php echo $background ?>);">
+    <div class="work-list-section" style="background-image: url(<?php echo $background ?>);" data-desktopbg="<?php echo $background ?>" data-mobilebg="<?php echo $background_mobile ?>">
       <div class="container text-white">
         <div class="row justify-content-center">
           <div class="col-lg-10">

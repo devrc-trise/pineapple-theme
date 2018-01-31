@@ -1,4 +1,5 @@
 <div class="container">
+  <p class="lead-lg text-bold text-center font-harmonia-black title">PEOPLE WE'VE WORKED WITH<span class="text-orange">.</span></p>
   <div class="row justify-content-center">
     <div class="col-4 col-md-4x">
       <div class="img-wrapper text-center">

@@ -24,6 +24,7 @@ function home_page_sc() {
 add_shortcode('home_page', 'home_page_sc');
 
 function work_page_sc() {
+  wp_enqueue_script('work-script', get_stylesheet_directory_uri().'/js/work.js', array('jquery'));
   get_template_part('pages/page', 'work');
 };
 add_shortcode('work_page', 'work_page_sc');

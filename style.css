@@ -431,6 +431,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 #clients-sections {
   padding: 50px 0;
 }
+#clients-sections .title {
+  margin: 5px 0 25px;
+}
 #clients-sections .img-wrapper {
   line-height: 121px;
   margin-bottom: 20px;
@@ -449,6 +452,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .work-list-section {
   background-size: cover;
+  background-position: center;
   padding: 200px 0 120px;
 }
 .work-list-section:first-child {
