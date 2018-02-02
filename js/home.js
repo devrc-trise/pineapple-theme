@@ -21,13 +21,23 @@ jQuery( document ).ready(function($) {
       $('#welcome-message > svg').attr('width', '800');
     } else if (window.innerWidth > 575 && currWidth != 1440) {
       $('#welcome-message > svg').removeAttr('viewBox');
-      $('#welcome-message > svg').each(function () { $(this)[0].setAttribute('viewBox', '0 0 1440 527') });
+      if (isIe()) {
+        $('#welcome-message > svg').each(function () { $(this)[0].setAttribute('viewBox', '0 50 1440 100') });
+      } else {
+        $('#welcome-message > svg').each(function () { $(this)[0].setAttribute('viewBox', '0 0 1440 527') });
+      }
       $('#welcome-message > svg').attr('width', '1440');
     }
   }
 
   resizeSvg();
   $(window).on('resize', resizeSvg);
+
+  // ie hackfix for casino wheel
+  if (isIe()) {
+    $('#welcome-message > svg').removeAttr('viewBox');
+    $('#welcome-message > svg').each(function () { $(this)[0].setAttribute('viewBox', '0 50 1440 100') });
+  }
 
   var backgroundVideo = new BackgroundVideo('.bv-video', {
     src: [$('.bv-video').data('src')]
@@ -60,3 +70,9 @@ jQuery( document ).ready(function($) {
     duration: 1200,
   })
 });
+
+function isIe() {
+  var ua = window.navigator.userAgent;
+  var msie = ua.indexOf("MSIE ");
+  return msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./);
+}
