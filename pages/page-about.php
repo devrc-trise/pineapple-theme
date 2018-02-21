@@ -48,7 +48,8 @@
             'category_name' => 'about_us',
             'meta_key' => 'sort',
             'orderby' => 'meta_value',
-            'order' => 'ASC'
+            'order' => 'ASC',
+            'posts_per_page' => -1
           );
           $the_query = new WP_Query($args);
           $postCount = 0;

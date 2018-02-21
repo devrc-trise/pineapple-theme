@@ -5,7 +5,8 @@
     'category_name' => 'work',
     'meta_key' => 'sort',
     'orderby' => 'meta_value',
-    'order' => 'ASC'
+    'order' => 'ASC',
+    'posts_per_page' => -1
   );
   $the_query = new WP_Query($args);
   while ($the_query->have_posts()) {
