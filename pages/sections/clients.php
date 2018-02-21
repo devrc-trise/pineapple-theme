@@ -1,5 +1,5 @@
 <div class="container">
-  <p class="lead-lg text-bold text-center font-harmonia-black title">PEOPLE WE'VE WORKED WITH<span class="text-orange">.</span></p>
+  <p class="lead-lg text-bold text-center font-harmonia-black title">SOME OF OUR CLIENTS<span class="text-orange">.</span></p>
   <div class="row justify-content-center">
     <?php
     $args = array(
