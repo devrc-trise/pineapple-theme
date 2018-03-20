@@ -8,11 +8,11 @@
   $contact_form = get_post_meta($post->ID, 'contact_form', true);
 ?>
 
-<div id="contact-lets-talk-section" class="bg-orange">
+<div id="jobs-lets-talk-section" class="bg-orange">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6 bg-orange lets-talk-left">
-        <div class="row full-height">
+        <div class="row">
           <div class="col-md-10 col-xl-9 offset-md-1 offset-xl-2 margin-auto">
             <h1 class="heading-lg text-white"><?php echo $title; ?></h1>
             <div class="row mb20">

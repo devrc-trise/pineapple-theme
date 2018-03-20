@@ -500,6 +500,33 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin-top: 110px;
 }
 
+/* Jobs Page */
+/* Contact Page */
+#jobs-lets-talk-section {
+  padding: 145px 0 0;
+}
+#jobs-lets-talk-section .pineapple-form.wpforms-container-full .wpforms-form input[type=text],
+#jobs-lets-talk-section .pineapple-form.wpforms-container-full .wpforms-form input[type=email],
+#jobs-lets-talk-section .pineapple-form.wpforms-container-full .wpforms-form input[type=tel],
+#jobs-lets-talk-section .pineapple-form.wpforms-container-full .wpforms-form textarea {
+  background-color: #fff;
+}
+.pineapple-form.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+  height: 144px;
+}
+#jobs-lets-talk-section .pineapple-form.wpforms-container-full .wpforms-form button[type=submit].btn-primary.btn-lg {
+  background-color: #fff;
+  color: #F3B237;
+}
+#jobs-lets-talk-section .wpforms-confirmation-container-full {
+  color: #fff;
+  text-align: center;
+}
+#jobs-lets-talk-section .pineapple-form.wpforms-container-full .wpforms-form label {
+  font-size: 1.375em;
+  color: #fff;
+}
+
 /* About Page */
 #about-welcome-section {
   padding: 250px 0 215px;
