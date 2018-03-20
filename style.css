@@ -521,8 +521,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #fff;
   text-align: center;
 }
-#jobs-lets-talk-section .pineapple-form.wpforms-container-full .wpforms-form label.wpforms-field-label-inline {
+#jobs-lets-talk-section .pineapple-form.wpforms-container-full .wpforms-form label.wpforms-field-label-inline,
+#jobs-lets-talk-section .pineapple-form.wpforms-container-full .wpforms-form label.wpforms-field-label {
   font-size: 1.375em;
+  font-weight: normal;
   color: #fff;
 }
 
