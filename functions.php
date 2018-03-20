@@ -39,4 +39,9 @@ function about_page_sc() {
   get_template_part('pages/page', 'about');
 };
 add_shortcode('about_page', 'about_page_sc');
+
+function jobs_page_sc() {
+  get_template_part('pages/page', 'jobs');
+};
+add_shortcode('jobs_page', 'jobs_page_sc');
 ?>
