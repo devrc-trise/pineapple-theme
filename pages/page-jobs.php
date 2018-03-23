@@ -6,6 +6,7 @@
   $address_label = get_post_meta($post->ID, 'address_label', true);
   $address = get_post_meta($post->ID, 'address', true);
   $contact_form = get_post_meta($post->ID, 'contact_form', true);
+  $image = get_post_meta($post->ID, 'image', true);
 ?>
 
 <div id="jobs-lets-talk-section" class="bg-orange">
@@ -39,4 +40,8 @@
       </div>
     </div>
   </div>
+</div>
+
+<div>
+  <img src="<?php echo $image; ?>" width="100%" />
 </div>
